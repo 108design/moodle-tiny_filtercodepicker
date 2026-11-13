@@ -19,7 +19,7 @@ Find and insert FilterCodes while you edit Moodle content in TinyMCE. The picker
 2. Install the FilterCode Picker ZIP through **Site administration → Plugins → Install plugins**. For a manual installation, place the `filtercodepicker` directory under `lib/editor/tiny/plugins/` in Moodle's web root and run the Moodle upgrade.
 3. Open a TinyMCE editor. Use the bracket icon in the toolbar or choose **Insert → Insert FilterCode**.
 
-This beta targets Moodle 4.5 through 5.3. The picker requires the `tiny/filtercodepicker:use` capability. Editing teachers and managers have it by default in their assigned contexts.
+Supports Moodle 4.5 through 5.3. The picker requires the `tiny/filtercodepicker:use` capability. Editing teachers and managers have it by default in their assigned contexts.
 
 ## Using the picker
 
