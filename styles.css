@@ -1,6 +1,16 @@
-/* Align the native icon with the plugin name on Moodle's upgrade screen. */
-#plugins-check tr.name-tiny_filtercodepicker td.displayname > img.pluginicon {
-    vertical-align: -0.125em;
+/* Use the same inline logo as Frontpage in Moodle's plugin check, including before installation. */
+#page-admin-index #plugins-check tr.name-tiny_filtercodepicker td.displayname > img.pluginicon {
+    display: none;
+}
+
+#page-admin-index #plugins-check tr.name-tiny_filtercodepicker td.displayname > .pluginname::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-inline-end: .35em;
+    vertical-align: -.125em;
+    background: url('[[pix:tiny_filtercodepicker|icon]]') center / contain no-repeat;
 }
 
 .tiny-filtercodepicker-modal .modal-header {
