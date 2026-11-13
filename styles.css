@@ -1,3 +1,8 @@
+/* Align the native icon with the plugin name on Moodle's upgrade screen. */
+#plugins-check tr.name-tiny_filtercodepicker td.displayname > img.pluginicon {
+    vertical-align: -0.125em;
+}
+
 .tiny-filtercodepicker-modal .modal-header {
     align-items: center;
 }
