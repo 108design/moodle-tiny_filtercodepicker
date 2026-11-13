@@ -1,0 +1,65 @@
+{{!
+    This file is part of Moodle - https://moodle.org/
+    @copyright 2026 108design
+    @license https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+
+    @template tiny_filtercodepicker/picker
+    FilterCode picker with a searchable catalogue and contextual preview.
+}}
+<div class="tiny-filtercodepicker">
+    <div class="tiny-filtercodepicker-columns">
+        <section class="tiny-filtercodepicker-library" aria-label="{{#str}}search, tiny_filtercodepicker{{/str}}">
+            <label class="d-block fw-semibold mb-2">
+                {{#str}}search, tiny_filtercodepicker{{/str}}
+                <input class="form-control mt-1" type="search" data-search autocomplete="off"
+                    placeholder="{{#str}}searchhint, tiny_filtercodepicker{{/str}}">
+            </label>
+            <div class="tiny-filtercodepicker-filters" role="group" aria-label="{{#str}}categories, tiny_filtercodepicker{{/str}}">
+                {{#categories}}
+                    <button class="btn btn-outline-secondary btn-sm" type="button" data-category="{{id}}"
+                        aria-pressed="{{#selected}}true{{/selected}}{{^selected}}false{{/selected}}">
+                        {{label}} <span class="tiny-filtercodepicker-count">{{count}}</span>
+                    </button>
+                {{/categories}}
+            </div>
+            <ul class="tiny-filtercodepicker-results list-unstyled mb-0" aria-label="{{#str}}search, tiny_filtercodepicker{{/str}}">
+                {{#entries}}
+                    <li><button type="button" class="tiny-filtercodepicker-result" data-entry="{{id}}" aria-pressed="false">
+                        <span>{{label}}</span><code>{{open}}{{#close}}…{{close}}{{/close}}</code>
+                    </button></li>
+                {{/entries}}
+            </ul>
+            <p class="small text-muted my-2" data-empty role="status" hidden>{{#str}}noresults, tiny_filtercodepicker{{/str}}</p>
+        </section>
+        <section class="tiny-filtercodepicker-details" aria-label="{{#str}}preview, tiny_filtercodepicker{{/str}}">
+            <header class="tiny-filtercodepicker-detail-header">
+                <h3 class="h5 mb-1" data-preview-title>{{#str}}preview, tiny_filtercodepicker{{/str}}</h3>
+                <p class="small text-muted mb-0">{{#str}}previewcontext, tiny_filtercodepicker{{/str}} · {{contextname}}</p>
+            </header>
+            <div data-details hidden>
+                <section class="tiny-filtercodepicker-detail-section">
+                    <h4 class="tiny-filtercodepicker-detail-label">{{#str}}previewresult, tiny_filtercodepicker{{/str}}</h4>
+                    <div class="tiny-filtercodepicker-preview mb-0" role="status" aria-live="polite" data-preview></div>
+                </section>
+                <section class="tiny-filtercodepicker-detail-section">
+                    <h4 class="tiny-filtercodepicker-detail-label">{{#str}}description, tiny_filtercodepicker{{/str}}</h4>
+                    <p class="mb-0" data-description></p>
+                </section>
+                <section class="tiny-filtercodepicker-detail-section">
+                    <h4 class="tiny-filtercodepicker-detail-label">{{#str}}code, tiny_filtercodepicker{{/str}}</h4>
+                    <pre class="tiny-filtercodepicker-code mb-0"><code data-snippet></code></pre>
+                    <div class="small text-muted mt-2" data-conditional hidden>
+                        {{#hasSelection}}
+                            <p class="mb-1">{{#str}}selection, tiny_filtercodepicker{{/str}}</p>
+                            <p class="mb-0">{{#str}}previewselection, tiny_filtercodepicker{{/str}}</p>
+                        {{/hasSelection}}
+                        {{^hasSelection}}<p class="mb-0">{{#str}}samplehint, tiny_filtercodepicker{{/str}}</p>{{/hasSelection}}
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+    <div class="tiny-filtercodepicker-actions">
+        <button type="button" class="btn btn-primary" data-insert disabled>{{#str}}insert, tiny_filtercodepicker{{/str}}</button>
+    </div>
+</div>
