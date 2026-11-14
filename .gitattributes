@@ -1,3 +1,47 @@
-/.gitattributes export-ignore
-/.github export-ignore
-/docs export-ignore
+# Generated for the exact normal installation profile.
+* -export-ignore -export-subst
+"/.gitattributes" export-ignore -export-subst
+"/.github" export-ignore -export-subst
+"/.github/workflows" export-ignore -export-subst
+"/.github/workflows/moodle-ci.yml" export-ignore -export-subst
+"/LICENSE.txt" -export-ignore -export-subst
+"/README.md" -export-ignore -export-subst
+"/amd" -export-ignore -export-subst
+"/amd/build" -export-ignore -export-subst
+"/amd/build/picker.min.js" -export-ignore -export-subst
+"/amd/build/picker.min.js.map" -export-ignore -export-subst
+"/amd/build/plugin.min.js" -export-ignore -export-subst
+"/amd/build/plugin.min.js.map" -export-ignore -export-subst
+"/amd/src" -export-ignore -export-subst
+"/amd/src/picker.js" -export-ignore -export-subst
+"/amd/src/plugin.js" -export-ignore -export-subst
+"/classes" -export-ignore -export-subst
+"/classes/external" -export-ignore -export-subst
+"/classes/external/preview.php" -export-ignore -export-subst
+"/classes/local" -export-ignore -export-subst
+"/classes/local/catalogue.php" -export-ignore -export-subst
+"/classes/local/preview_markup.php" -export-ignore -export-subst
+"/classes/plugininfo.php" -export-ignore -export-subst
+"/classes/privacy" -export-ignore -export-subst
+"/classes/privacy/provider.php" -export-ignore -export-subst
+"/db" -export-ignore -export-subst
+"/db/access.php" -export-ignore -export-subst
+"/db/services.php" -export-ignore -export-subst
+"/docs" export-ignore -export-subst
+"/docs/branding" export-ignore -export-subst
+"/docs/branding/logo.svg" export-ignore -export-subst
+"/docs/screenshots" export-ignore -export-subst
+"/docs/screenshots/catalogue.png" export-ignore -export-subst
+"/docs/screenshots/preview.png" export-ignore -export-subst
+"/lang" -export-ignore -export-subst
+"/lang/de" -export-ignore -export-subst
+"/lang/de/tiny_filtercodepicker.php" -export-ignore -export-subst
+"/lang/en" -export-ignore -export-subst
+"/lang/en/tiny_filtercodepicker.php" -export-ignore -export-subst
+"/pix" -export-ignore -export-subst
+"/pix/helpbrand.svg" -export-ignore -export-subst
+"/pix/icon.svg" -export-ignore -export-subst
+"/styles.css" -export-ignore -export-subst
+"/templates" -export-ignore -export-subst
+"/templates/picker.mustache" -export-ignore -export-subst
+"/version.php" -export-ignore -export-subst
