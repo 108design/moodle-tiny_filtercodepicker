@@ -40,3 +40,5 @@ Use the [issue tracker](https://github.com/108design/moodle-tiny_filtercodepicke
 ## License
 
 Available free of charge under the terms of the applicable license. See [LICENSE.txt](LICENSE.txt) for the GNU General Public License v3.0 or later.
+
+The 108design name and logo are subject to the [name and logo notice](TRADEMARKS.md).

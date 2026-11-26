@@ -6,6 +6,7 @@
 "/.github/workflows/moodle-ci.yml" export-ignore -export-subst
 "/LICENSE.txt" -export-ignore -export-subst
 "/README.md" -export-ignore -export-subst
+"/TRADEMARKS.md" -export-ignore -export-subst
 "/amd" -export-ignore -export-subst
 "/amd/build" -export-ignore -export-subst
 "/amd/build/picker.min.js" -export-ignore -export-subst

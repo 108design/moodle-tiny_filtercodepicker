@@ -27,9 +27,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'tiny_filtercodepicker';
-$plugin->version = 2026112400;
+$plugin->version = 2026112600;
 $plugin->requires = 2024100700;
 $plugin->supported = [405, 503];
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = '1.1.0';
+$plugin->release = '1.2.0';
 $plugin->dependencies = ['filter_filtercodes' => 2026101200];
