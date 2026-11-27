@@ -37,6 +37,8 @@
 "/lang" -export-ignore -export-subst
 "/lang/de" -export-ignore -export-subst
 "/lang/de/tiny_filtercodepicker.php" -export-ignore -export-subst
+"/lang/de_du" -export-ignore -export-subst
+"/lang/de_du/tiny_filtercodepicker.php" -export-ignore -export-subst
 "/lang/en" -export-ignore -export-subst
 "/lang/en/tiny_filtercodepicker.php" -export-ignore -export-subst
 "/pix" -export-ignore -export-subst
